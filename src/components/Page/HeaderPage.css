@@ -1,0 +1,32 @@
+.header-top {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+.header-top .social-icons ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.header-top .social-icons ul li {
+    display: inline;
+    margin-left: 8px;
+}
+.header-top .social-icons ul li a {
+    position: relative;
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    color: #fff;
+    border-radius: 50%;
+}
+.header-top .social-icons ul li a .icon {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+}
+.header-top .social-icons ul {
+}
