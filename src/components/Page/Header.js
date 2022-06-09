@@ -56,7 +56,7 @@ const Header = () => {
                             </li>
                             <li>
                                 <a
-                                    href=" "
+                                    href="https://www.linkedin.com/in/tanjir-dev/"
                                     style={{ backgroundColor: "#007AB9" }}
                                 >
                                     <FontAwesomeIcon
