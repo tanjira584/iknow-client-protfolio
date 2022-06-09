@@ -1,19 +1,23 @@
+body {
+    background-color: #000;
+}
 .header-top {
-    position: fixed;
+    position: sticky;
     left: 0;
     top: 0;
     width: 100%;
+    z-index: 9999;
 }
-.header-top .social-icons ul {
+.social-icons ul {
     margin: 0;
     padding: 0;
     list-style: none;
 }
-.header-top .social-icons ul li {
+.social-icons ul li {
     display: inline;
     margin-left: 8px;
 }
-.header-top .social-icons ul li a {
+.social-icons ul li a {
     position: relative;
     display: inline-block;
     width: 45px;
@@ -21,15 +25,14 @@
     color: #fff;
     border-radius: 50%;
 }
-.header-top .social-icons ul li a .icon {
+.social-icons ul li a .icon {
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
     font-size: 20px;
 }
-.header-top .social-icons ul {
-}
+
 /*-----------Footer --------------*/
 .footer-area {
     padding: 36px 0;
@@ -37,7 +40,58 @@
     left: 0;
     bottom: 0;
     width: 100%;
+    z-index: 9999;
 }
 .footer-area p {
     font-weight: 500;
+}
+
+/*------Sidebar Area -------*/
+.sidebar-area {
+    position: sticky;
+    background-color: #191d2b;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: hidden;
+    overflow-y: auto;
+    min-height: 100vh;
+    justify-content: space-between;
+    z-index: 1;
+    padding-bottom: 200px;
+}
+.sidebar-area .my-img {
+    width: 200px;
+    height: 200px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+.sidebar-area .main-menu {
+    padding: 50px 0;
+}
+.main-menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.main-menu ul li {
+}
+.main-menu ul li a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    color: rgba(255, 255, 255, 0.575);
+    font-weight: 500;
+    transition: 0.5s all;
+}
+.main-menu ul li a:hover {
+    background-color: rgba(3, 127, 255, 0.2);
+    color: #037fff;
+}
+.main-menu ul li a.active {
+    background-color: #037fff;
+    color: #fff;
 }
