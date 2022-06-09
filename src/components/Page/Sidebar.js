@@ -7,11 +7,12 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { NavLink } from "react-router-dom";
-import myImg from "../../images/my-img.png";
+import myImg from "../../images/tanjir.jpg";
 
-const Sidebar = () => {
+const Sidebar = ({ canvas }) => {
+    console.log(canvas);
     return (
-        <div className="sidebar-area">
+        <div className={canvas ? "sidebar-area open" : "sidebar-area"}>
             <div className="px-5 py-3 border-bottom">
                 <div className="my-img">
                     <img src={myImg} alt="" className="img-fluid" />

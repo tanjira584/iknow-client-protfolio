@@ -1,7 +1,7 @@
 import React from "react";
 
-const MainBody = () => {
-    return <div>hello world</div>;
+const MainBody = (props) => {
+    return <div>{props.children}</div>;
 };
 
 export default MainBody;
