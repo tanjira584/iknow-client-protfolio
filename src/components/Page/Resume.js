@@ -3,9 +3,19 @@ import React from "react";
 const Resume = () => {
     return (
         <div className="resume-area p-5">
-            <h2 className="mb-5" style={{ color: "#037fff" }}>
-                My Skills
-            </h2>
+            <div className="d-flex align-items-center justify-content-between mb-5">
+                <h2 className="" style={{ color: "#037fff" }}>
+                    My Skills
+                </h2>
+                <a
+                    className="resume-btn"
+                    target="_blank"
+                    rel="noreferrer"
+                    href="https://drive.google.com/file/d/1c6rCAnTBiMcqWkd3aRf82YA-vMfFieFy/view?usp=sharing"
+                >
+                    See Resume
+                </a>
+            </div>
             <div className="my-skills">
                 <ul>
                     <li>

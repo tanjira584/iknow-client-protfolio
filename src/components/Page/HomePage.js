@@ -11,12 +11,31 @@ import Contact from "./Contact";
 import Resume from "./Resume";
 import BlogSection from "./BlogSection";
 import Services from "./Services";
+import { useParams } from "react-router-dom";
 
 const HomePage = () => {
     const [canvas, setOffcanvas] = useState(false);
     const handleOffcanvas = (canvas) => {
         setOffcanvas(canvas);
     };
+    const { page } = useParams();
+    console.log(page);
+    let element;
+    if (!page) {
+        element = <HomeSection></HomeSection>;
+    } else if (page === "portfolio") {
+        element = <Protfolio></Protfolio>;
+    } else if (page === "contact") {
+        element = <Contact></Contact>;
+    } else if (page === "resume") {
+        element = <Resume></Resume>;
+    } else if (page === "blog") {
+        element = <BlogSection></BlogSection>;
+    } else if (page === "services") {
+        element = <Services></Services>;
+    } else if (page === "about") {
+        element = <AboutSection></AboutSection>;
+    }
 
     return (
         <div className="bg-black w-100 h-100">
@@ -27,15 +46,7 @@ const HomePage = () => {
                         <Sidebar canvas={canvas}></Sidebar>
                     </div>
                     <div className="col-md-9">
-                        <MainBody>
-                            <HomeSection></HomeSection>
-                            <AboutSection></AboutSection>
-                            <Services></Services>
-                            <Resume></Resume>
-                            <Protfolio></Protfolio>
-                            <BlogSection></BlogSection>
-                            <Contact></Contact>
-                        </MainBody>
+                        <MainBody>{element}</MainBody>
                     </div>
                 </div>
             </div>

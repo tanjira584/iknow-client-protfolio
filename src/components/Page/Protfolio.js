@@ -3,6 +3,7 @@ import project1 from "../../images/project1.png";
 import project2 from "../../images/project2.png";
 import project3 from "../../images/project3.png";
 import project4 from "../../images/project4.png";
+import { Link } from "react-router-dom";
 
 const Protfolio = () => {
     return (
@@ -27,7 +28,11 @@ const Protfolio = () => {
                                     used-car or new-cars for sale.
                                 </p>
                                 <button className="resume-btn">Preview</button>{" "}
-                                <button className="resume-btn">Details</button>
+                                <Link to="/project/inventory">
+                                    <button className="resume-btn">
+                                        Details
+                                    </button>
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -47,7 +52,11 @@ const Protfolio = () => {
                                     go with most things in her wardrobe.
                                 </p>
                                 <button className="resume-btn">Preview</button>{" "}
-                                <button className="resume-btn">Details</button>
+                                <Link to="/project/analytic">
+                                    <button className="resume-btn">
+                                        Details
+                                    </button>
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -68,7 +77,11 @@ const Protfolio = () => {
                                     dashboard functionality.
                                 </p>
                                 <button className="resume-btn">Preview</button>{" "}
-                                <button className="resume-btn">Details</button>
+                                <Link to="/project/manufacturer">
+                                    <button className="resume-btn">
+                                        Details
+                                    </button>
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -89,7 +102,11 @@ const Protfolio = () => {
                                     them in court.
                                 </p>
                                 <button className="resume-btn">Preview</button>{" "}
-                                <button className="resume-btn">Details</button>
+                                <Link to="/project/canun">
+                                    <button className="resume-btn">
+                                        Details
+                                    </button>
+                                </Link>
                             </div>
                         </div>
                     </div>

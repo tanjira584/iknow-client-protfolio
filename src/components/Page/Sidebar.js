@@ -42,6 +42,16 @@ const Sidebar = ({ canvas }) => {
                     </li>
                     <li>
                         <NavLink
+                            to="/services"
+                            className={(navInfo) =>
+                                navInfo.isActive ? "active" : " "
+                            }
+                        >
+                            Services
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink
                             to="/resume"
                             className={(navInfo) =>
                                 navInfo.isActive ? "active" : " "
