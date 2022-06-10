@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@emailjs/browser": "^3.6.2",
     "@fortawesome/fontawesome-svg-core": "^6.1.1",
     "@fortawesome/free-brands-svg-icons": "^6.1.1",
     "@fortawesome/free-regular-svg-icons": "^6.1.1",
@@ -15,10 +16,12 @@
     "firebase": "^9.8.2",
     "install": "^0.13.0",
     "npm": "^8.12.1",
+    "radium": "^0.26.2",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
+    "typewriter-effect": "^2.18.2",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

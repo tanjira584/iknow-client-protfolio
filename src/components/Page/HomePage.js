@@ -8,6 +8,9 @@ import Protfolio from "./Protfolio";
 import MainBody from "./MainBody";
 import Sidebar from "./Sidebar";
 import Contact from "./Contact";
+import Resume from "./Resume";
+import BlogSection from "./BlogSection";
+import Services from "./Services";
 
 const HomePage = () => {
     const [canvas, setOffcanvas] = useState(false);
@@ -27,7 +30,10 @@ const HomePage = () => {
                         <MainBody>
                             <HomeSection></HomeSection>
                             <AboutSection></AboutSection>
+                            <Services></Services>
+                            <Resume></Resume>
                             <Protfolio></Protfolio>
+                            <BlogSection></BlogSection>
                             <Contact></Contact>
                         </MainBody>
                     </div>

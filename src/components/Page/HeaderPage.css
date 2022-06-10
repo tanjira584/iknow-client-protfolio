@@ -40,7 +40,7 @@ body {
     left: 0;
     bottom: 0;
     width: 100%;
-    z-index: 9999;
+    z-index: 999;
 }
 .footer-area p {
     font-weight: 500;
@@ -240,6 +240,90 @@ form input {
     padding: 0;
     list-style: none;
 }
+/*-----------Resume Area ---------------*/
+.resume-area {
+    margin: 100px 0;
+    background-color: #191d2b;
+}
+.my-skills ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.my-skills ul li {
+    margin-bottom: 30px;
+}
+.blog-area {
+    margin: 100px 0;
+    background-color: #191d2b;
+}
+.blog-area .blog {
+    background-color: #000;
+}
+.blog .img {
+    max-height: 177px;
+}
+.blog .content {
+    padding: 20px;
+}
+.blog .content h5 {
+    color: #037fff;
+    margin-bottom: 12px;
+    font-size: 17px;
+}
+.blog .content h4 {
+    font-size: 19px;
+    color: #8c8e95;
+}
+.service-area {
+    margin: 100px 0;
+    background-color: #191d2b;
+}
+.service {
+    border: 1px solid #2e344e;
+    border-top: 3px solid #2e344e;
+    padding: 20px;
+}
+.service .icon {
+    font-size: 24px;
+    color: #037fff;
+    margin-bottom: 12px;
+}
+.service h4 {
+    color: #fff;
+    margin-bottom: 12px;
+}
+.service p {
+    font-size: 17px;
+    color: #8c8e95;
+}
+.review .content {
+    position: relative;
+    background-color: #10121b;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+.review .content p {
+    font-size: 17px;
+    color: #8c8e95;
+    line-height: 1.6em;
+}
+.review .content::after {
+    content: " ";
+    position: absolute;
+    top: 100%;
+    left: 40px;
+    border-top: 10px solid #10121b;
+    border-left: 10px solid #10121b;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid transparent;
+}
+.review .info h5 {
+    color: #fff;
+}
+.review .info h6 {
+    color: #8c8e95;
+}
 /*----------------Media Query-----------------*/
 @media screen and (max-width: 768px) {
     .sidebar-area {
@@ -247,7 +331,7 @@ form input {
         top: 0;
         z-index: 9999;
         transition: 0.5s all;
-        padding-bottom: 100px;
+        padding-bottom: 0;
     }
     .sidebar-area.open {
         left: 0px;

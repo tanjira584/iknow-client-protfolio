@@ -1,9 +1,32 @@
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import { faLocationDot, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React from "react";
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs
+            .sendForm(
+                "service_3jnx74x",
+                "template_emmv5hn",
+                form.current,
+                "7flA0-Hoc4JX_mZzm"
+            )
+            .then(
+                (result) => {
+                    console.log(result.text);
+                    e.target.reset();
+                },
+                (error) => {
+                    console.log(error.text);
+                }
+            );
+    };
     return (
         <div className="contact-area p-5">
             <h2 style={{ color: "#037fff" }} className="mb-5">
@@ -12,13 +35,13 @@ const Contact = () => {
             <div className="row g-5">
                 <div className="col-md-6">
                     <h4 className="mb-3 text-white-50">Get in Touch</h4>
-                    <form>
+                    <form ref={form} onSubmit={sendEmail}>
                         <input
                             type="text"
                             style={{ color: "#fff" }}
                             placeholder="Enter name"
                             className="form-control bg-transparent mb-3"
-                            name="name"
+                            name="user_name"
                             id=""
                         />
                         <input
@@ -26,7 +49,7 @@ const Contact = () => {
                             style={{ color: "#fff" }}
                             placeholder="Enter email"
                             className="form-control bg-transparent mb-3"
-                            name="email"
+                            name="user_email"
                             id=""
                         />
                         <input
